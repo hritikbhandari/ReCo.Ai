@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Human Activity Recognition</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('home')}}"method="post">
+    	<input type="text" name="body_acc_x" placeholder="Body Acceleration in x axis" required="required" />
+        <input type="text" name="body_acc_y" placeholder="Body Acceleration in y axis" required="required" />
+        <input type="text" name="body_acc_z" placeholder="Body Acceleration in z axis" required="required" />
+        <input type="text" name="body_gyro_x" placeholder="Body Gyrometer in x axis" required="required" />
+        <input type="text" name="body_gyro_y" placeholder="Body Gyrometer in y axis" required="required" />
+        <input type="text" name="body_gyro_z" placeholder="Body Gyrometer in z axis" required="required" />
+        <input type="text" name="total_acc_x" placeholder="Total Acceleration in x axis" required="required" />
+        <input type="text" name="total_acc_y" placeholder="Total Acceleration in y axis" required="required" />
+		<input type="text" name="total_acc_z" placeholder="Total Acceleration in  axis" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
