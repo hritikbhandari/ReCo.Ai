@@ -88,15 +88,46 @@
     <div class="site-section">
       <div class="container">
 
-        <div class="row">
+        <div class="row" style="margin-left: 20%;">
           
 
-          <div class="col-lg-12" style="align-items: center;">
+          <div class="col-lg-12 text-center">
 
 
             <div class="d-block d-md-flex bg-white mb-5" data-aos="fade-up">
               <div class="text" id=#function>
-                <h3 class="font-weight-normal">The main functionalities will come here.</h3>
+                <!-- <h3 class="font-weight-normal">The main functionalities will come here.</h3> -->
+
+                <div class="login text-center">
+                  <h1>Human Activity Recognition</h1>
+                  <p>Enter the following values so that I can tell what you are doing:</p>
+                
+                     <!-- Main Input For Receiving Query to our ML -->
+                    <form action="{{ url_for('home')}}"method="post">
+
+                      <input type="text" name="body_acc_x" placeholder="Body Acceleration in x axis" required="required" /> <br>
+                        <input type="text" name="body_acc_y" placeholder="Body Acceleration in y axis" required="required" /> <br>
+                        <input type="text" name="body_acc_z" placeholder="Body Acceleration in z axis" required="required" /> <br>
+
+                        <input type="text" name="body_gyro_x" placeholder="Body Gyrometer in x axis" required="required" /> <br>
+                        <input type="text" name="body_gyro_y" placeholder="Body Gyrometer in y axis" required="required" /> <br>
+                        <input type="text" name="body_gyro_z" placeholder="Body Gyrometer in z axis" required="required" /> <br>
+                        <input type="text" name="total_acc_x" placeholder="Total Acceleration in x axis" required="required" /> <br> 
+                        <input type="text" name="total_acc_y" placeholder="Total Acceleration in y axis" required="required" /> <br>
+                    <input type="text" name="total_acc_z" placeholder="Total Acceleration in  axis" required="required" />
+                <br> <br>
+                        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+                    </form>
+                    <br>
+                    <br>
+                    
+                    <h2>.</h2>
+                
+                   <br>
+                   <br>
+                   
+                
+                 </div>
 
               </div>
 
