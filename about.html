@@ -54,9 +54,9 @@
               <div class="d-block d-lg-none ml-md-0 mr-auto"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
 
               <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li class="active">
+                <li>
                   <a href="index.html">Home</a>
-                </li>
+                </li class="active">
                 <li><a href="about.html">About</a></li>
               </ul>
             </nav>
@@ -69,7 +69,7 @@
       
     </header>
 
-    <div class="site-blocks-cover inner-page-cover bg-light mb-5">
+    <div class="site-blocks-cover inner-page-cover mb-5">
       <div class="container" data-aos="zoom-in">
         <div class="row align-items-center">
           <div class="col-12 text-center">
@@ -86,9 +86,28 @@
             <h2 class="display-5 mb-3 text-black">ABSTRACT </h2>
           </div>
           <div class="col-lg-12">
-            <p>Mobile phones or smartphones have seen a gradual surge in becoming the central communication device in people’s lives. These tiny technological mastery, equipped with a set of sensors have an ability to simultaneously function as a platform for human activity recognition. The embedded sensors such as the accelerometer, digital compass, gyroscope, GPS and camera are enabling applications spanning across various domains. These sensors pave way to easier and accessible human activity recognition
-              With such capabilities, the smartphones have immense applications in healthcare. Smart environments can be developed to provide support to people with risk factors when it comes to living independently.
-              We propose a categorization of 6 human activities: walking, walking upstairs, walking downstairs, sitting, standing, laying. We divide this into two large categories: Static( standing, sitting, laying) and Dynamic( Walking, walking upstairs, walking downstairs). We classify the activities performed by the person using the sensor data and report the results,challenges and project prospects.
+            <p>Mobile phones or smartphones have seen a gradual surge in becoming the central communication device in people’s lives. These tiny technological mastery, equipped with a set of sensors have an ability to simultaneously function as a platform for human activity recognition. The embedded sensors such as the <strong> accelerometer, digital compass, gyroscope, GPS and camera </strong>are enabling applications spanning across various domains. These sensors pave way to easier and accessible human activity recognition
+              With such capabilities, the smartphones have immense applications in healthcare. 
+              <br> <br>
+              Smart environments can be developed to provide support to people with risk factors when it comes to living independently.
+              We propose a categorization of 6 human activities:
+              <br>
+              <ol>
+                <li> Walking</li>
+                <li> Walking upstairs</li>
+                <li> Walking downstairs</li>
+                <li> Sitting</li>
+                <li> Standing</li>
+                <li> Laying</li>
+              
+              </ol>
+              
+              
+              We divide this into two large categories:
+              <br>
+              <ol><li>Static( standing, sitting, laying) </li>
+              <li> Dynamic( Walking, walking upstairs, walking downstairs).</li>
+            </ol>  We classify the activities performed by the person using the sensor data and report the results,challenges and project prospects.
               
             </p>  
             </div>
@@ -104,7 +123,7 @@
           </div>
           <div class="col-lg-12">
             <p> The application targets people who need monitoring and help with their daily activities,especially those with loss of cognitive autonomy. It aims on determining the activities of the person based on sensor data. 
-              The primary implementation of the application is in healthcare,especially for monitoring people undergoing physiotherapy, physical trauma recovery and the elderly. 
+              The primary implementation of the application is in healthcare, especially for monitoring people undergoing physiotherapy, physical trauma recovery and the elderly. 
               </p>
           </div>
           
@@ -120,25 +139,37 @@
           </div>
           <div class="col-lg-12">
             <p>
-              The dataset used was the Human Activity Recognition Using Smartphones Data Set.
+              The dataset used was the <a href="https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones"> Human Activity Recognition Using Smartphones Data Set.
+              </a>
 
-Description:
-The data was obtained by carrying out experiments on a group of 30 people within the ages of 19-48 years.The activities performed were :walking,walking upstairs, walking downstairs,sitting,standing,laying.
-The data was obtained by wearing a smartphone on the waist. The embedded accelerometer and gyroscope were used to capture linear acceleration and angular velocity for all the 3 axes at a rate of 50Hz.
+              <br>
+
+      <h3> Description:</h3>
+      The data was obtained by carrying out experiments on a group of 30 people within the ages of 19-48 years.
+      The activities performed were :walking,walking upstairs, walking downstairs, sitting, standing, laying.
+      The data was obtained by wearing a smartphone on the waist. 
+      The embedded accelerometer and gyroscope were used to capture linear acceleration and angular velocity for all the 3 axes at a rate of 50Hz.
 </p>
 
 <div style="margin-left: 15%;">
   <img src="./images/demo.png" alt="" width="75%">
 </div>
 <p>
-Attributes:
-For each record in the dataset it is provided:
-Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-Triaxial Angular velocity from the gyroscope.
-A 561-feature vector with time and frequency domain variables.
-Its activity label.
-An identifier of the subject who carried out the experiment.
-Sensor readings:
+  <h3>
+Attributes:</h3>
+For each record in the dataset it is provided: <br>
+<ol>
+  <li>
+Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. </li>
+<li> Triaxial Angular velocity from the gyroscope. </li>
+<li> A 561-feature vector with time and frequency domain variables. </li>
+<li> Its activity label. </li>
+<li> An identifier of the subject who carried out the experiment. </li>
+</ol>
+<br>
+
+<h3>
+Sensor readings:</h3>
 Accelerometer and Gyroscope readings
 
             </p>
@@ -155,7 +186,8 @@ Accelerometer and Gyroscope readings
           </div>
           <div class="col-lg-12">
             <p>Activity recognition systems have three main components:
-              A low-level sensing module that continuously gathers relevant information about activities using microphones, accelerometers, light sensors, and so on
+              A low-level sensing module that continuously gathers relevant information about activities using microphones, accelerometers, light sensors, and so on.
+              <br>
              A feature processing and selection module that processes the raw sensor data into features that help discriminate between activities 
               A classification module that uses the features to infer what activity an individual or group of individuals is engaged
              
@@ -172,9 +204,14 @@ Accelerometer and Gyroscope readings
           </div>
           <div class="col-lg-12">
             <p>
-              The basic model principle applied here are deep learning networks with LSTM as their foundational functionalities. The model has been implemented via the latest version of Keras (Keras 2.4.2) with a tensorflow backend. The model uses LSTM layers because of two main reasons: 
-To avoid vanishing and exploding gradients
-To make best learning sense out of incomprehensible and noisy data
+              The basic model principle applied here are deep learning networks with <strong> LSTM as their foundational functionalities </strong>. The model has been implemented via the latest version of <strong> Keras (Keras 2.4.2) with a tensorflow backend. </strong>
+              
+              <br> The model uses LSTM layers because of two main reasons: 
+              <br>
+              <ol><li>
+To avoid vanishing and exploding gradients</li>
+<li>
+To make best learning sense out of incomprehensible and noisy data </li></ol>
 The dataset used here is huge and has noisy values, LSTM proves to be the best model by eradicating the complete need to go through the noisy data and undergo noise attenuation manually. As the data is also huge the gradient descent method usually undergoes vanishing or exploding gradients which is managed by LSTM as well.
 Architecture:
 The model’s data is using a mini batch of size 16 and is trained over 30 epochs. It contains 32 hidden layers of tan-h LSTM. A dropout layer of 0.5 parameter is passed to reduce the risk of overfitting. The architecture ends with a dense layer with an activation function of sigmoid.
@@ -194,13 +231,16 @@ An input dimension of 9 parameters accreted with 32 LSTM layers form a recondite
             </h2>
           </div>
           <div class="col-lg-12">
-            <p>Intraclass variation and interclass similarity
-              Recognition under real world settings viz. Complex environmental factors,multiple subjects
-              Data Security
-              Availability of technology 
-              Scalability
-              Adaptability
-              
+            <p>
+              <ol>
+                <li>
+              Intraclass variation and interclass similarity</li>
+              <li>  Recognition under real world settings viz. Complex environmental factors,multiple subjects
+              </li> <li> Data Security </li>
+            <li>  Availability of technology </li> 
+           <li>   Scalability  </li>
+            <li>  Adaptability </li>
+            </ol>
              
             </p></div>
           
@@ -214,9 +254,9 @@ An input dimension of 9 parameters accreted with 32 LSTM layers form a recondite
             </h2>
           </div>
           <div class="col-lg-12">
-            <p>Ambient Assisted Living
-              Ambient Assisted Living (AAL) environments encompass technical systems and the Internet of Things (IoT) tools to support seniors in their daily routines. They aim to enable seniors to live independently and safely for as long as possible when faced declining physical or cognitive capacities.
-              The demarcation between traditional and smart systems is  automation. A vast number of existing commercial projects are based on predefined rules and actions,which can be changed manually,thereby reducing efficiency. By integrating IOT and Artificial Intelligence,we get a futuristic amalgamation:Ambient Intelligence which has immense prospects to help the ailing.
+            <p> <strong> Ambient Assisted Living
+              Ambient Assisted Living (AAL) </strong>environments encompass technical systems and the Internet of Things (IoT) tools to support seniors in their daily routines. They aim to enable seniors to live independently and safely for as long as possible when faced declining physical or cognitive capacities.
+              The demarcation between traditional and smart systems is  automation. A vast number of existing commercial projects are based on predefined rules and actions,which can be changed manually, thereby reducing efficiency. By integrating IOT and Artificial Intelligence, we get a futuristic amalgamation: <br> Ambient Intelligence which has immense prospects to help the ailing.
               
               Visual human activity recognition 
               Smart environments which include cameras and sensors can be used to obtain images and hence can be used for surveillance and monitoring. This is a viable addition to the project which makes it even serviceable and gives it a commercial use case.
@@ -337,7 +377,7 @@ An input dimension of 9 parameters accreted with 32 LSTM layers form a recondite
                 <div class="at-user">
                   <div class="at-user__avatar"><img src="./images/Gayathri.jpg"/></div>
                   <div class="at-user__name">Vincenzo Romeo</div>
-                  <div class="at-user__title">Lead UX/UI Designer</div>
+                  <div class="at-user__title"></div>
                   <ul class="at-social">
                     <li class="at-social__item"><a href="./images/Gayathri.jpg" target="_blank">
                         <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
