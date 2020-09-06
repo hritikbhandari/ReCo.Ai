@@ -4,6 +4,15 @@
 </a>
 	<h2 align="center"> Whatcha doin'? </h2>
 	<h4 align="center">A Human Activity Recognising Web-App to classify your different Static and Dynamic Activities based on accelerometer and gyroscope readings. <h4>
+	
+<br>
+
+<p align="center">
+	 
+[Checkout the Project Demonstration and Explanation Video Here!](https://drive.google.com/file/d/1pSH3e4y-9EoXQDdur3iB45DjXRp5cpw9/view?usp=sharing)
+
+
+	 
 </p>
 
 ---
