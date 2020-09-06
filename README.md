@@ -83,7 +83,7 @@ Akshat Anand
 Pratyaksh Bhalla
 
 <p align="center">
-<img src = "Pratyaksh.JPG"  height="120" alt="Your Name Here">
+<img src = "./images/Pratyaksh.JPG"  height="120" alt="Your Name Here">
 </p>
 <p align="center">
 <a href = "https://github.com/person3"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
