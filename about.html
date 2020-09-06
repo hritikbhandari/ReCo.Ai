@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ReCo.Ai</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900"> 
+    <link rel="stylesheet" href="css/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <header class="site-navbar py-4" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+
+
+          <div class="col-3">
+            <h1 class="site-logo"><a href="index.html" class="h2">
+              <img src="./images/reco full.png" alt="" width="80%%"></a></h1>
+          </div>
+          <div class="col-9">
+            <nav class="site-navigation position-relative text-right text-md-right" role="navigation">
+
+
+
+              <div class="d-block d-lg-none ml-md-0 mr-auto"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+              <ul class="site-menu js-clone-nav d-none d-lg-block">
+                <li>
+                  <a href="index.html">Home</a>
+                </li class="active">
+                <li><a href="about.html">About</a></li>
+              </ul>
+            </nav>
+
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+
+    <div class="site-blocks-cover inner-page-cover mb-5">
+      <div class="container" data-aos="zoom-in">
+        <div class="row align-items-center">
+          <div class="col-12 text-center">
+            <h1 class="mb-0">Get to know How it works</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="site-section pt-3">
+      <div class="container">
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-12">
+            <h2 class="display-5 mb-3 text-black">ABSTRACT </h2>
+          </div>
+          <div class="col-lg-12">
+            <p>Mobile phones or smartphones have seen a gradual surge in becoming the central communication device in people’s lives. These tiny technological mastery, equipped with a set of sensors have an ability to simultaneously function as a platform for human activity recognition. The embedded sensors such as the <strong> accelerometer, digital compass, gyroscope, GPS and camera </strong>are enabling applications spanning across various domains. These sensors pave way to easier and accessible human activity recognition
+              With such capabilities, the smartphones have immense applications in healthcare. 
+              <br> <br>
+              Smart environments can be developed to provide support to people with risk factors when it comes to living independently.
+              We propose a categorization of 6 human activities:
+              <br>
+              <ol>
+                <li> Walking</li>
+                <li> Walking upstairs</li>
+                <li> Walking downstairs</li>
+                <li> Sitting</li>
+                <li> Standing</li>
+                <li> Laying</li>
+              
+              </ol>
+              
+              
+              We divide this into two large categories:
+              <br>
+              <ol><li>Static( standing, sitting, laying) </li>
+              <li> Dynamic( Walking, walking upstairs, walking downstairs).</li>
+            </ol>  We classify the activities performed by the person using the sensor data and report the results,challenges and project prospects.
+              
+            </p>  
+            </div>
+          
+        </div>
+
+
+
+
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-12">
+            <h2 class="display-5 mb-3 text-black">TARGET AUDIENCE</h2>
+          </div>
+          <div class="col-lg-12">
+            <p> The application targets people who need monitoring and help with their daily activities,especially those with loss of cognitive autonomy. It aims on determining the activities of the person based on sensor data. 
+              The primary implementation of the application is in healthcare, especially for monitoring people undergoing physiotherapy, physical trauma recovery and the elderly. 
+              </p>
+          </div>
+          
+        </div>
+
+
+
+
+
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-12">
+            <h2 class="display-5 mb-3 text-black">DATASET</h2>
+          </div>
+          <div class="col-lg-12">
+            <p>
+              The dataset used was the <a href="https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones"> Human Activity Recognition Using Smartphones Data Set.
+              </a>
+
+              <br>
+
+      <h3> Description:</h3>
+      The data was obtained by carrying out experiments on a group of 30 people within the ages of 19-48 years.
+      The activities performed were :walking,walking upstairs, walking downstairs, sitting, standing, laying.
+      The data was obtained by wearing a smartphone on the waist. 
+      The embedded accelerometer and gyroscope were used to capture linear acceleration and angular velocity for all the 3 axes at a rate of 50Hz.
+</p>
+
+<div style="margin-left: 15%;">
+  <img src="./images/demo.png" alt="" width="75%">
+</div>
+<p>
+  <h3>
+Attributes:</h3>
+For each record in the dataset it is provided: <br>
+<ol>
+  <li>
+Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. </li>
+<li> Triaxial Angular velocity from the gyroscope. </li>
+<li> A 561-feature vector with time and frequency domain variables. </li>
+<li> Its activity label. </li>
+<li> An identifier of the subject who carried out the experiment. </li>
+</ol>
+<br>
+
+<h3>
+Sensor readings:</h3>
+Accelerometer and Gyroscope readings
+
+            </p>
+          </div>
+          
+        </div>
+
+
+
+
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-12">
+            <h2 class="display-5 mb-3 text-black">SUGGESTED SKELETAL ARCHITECTURE</h2>
+          </div>
+          <div class="col-lg-12">
+            <p>Activity recognition systems have three main components:
+              A low-level sensing module that continuously gathers relevant information about activities using microphones, accelerometers, light sensors, and so on.
+              <br>
+             A feature processing and selection module that processes the raw sensor data into features that help discriminate between activities 
+              A classification module that uses the features to infer what activity an individual or group of individuals is engaged
+             
+            </p></div>
+          
+        </div>
+
+
+
+
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-12">
+            <h2 class="display-5 mb-3 text-black">MODEL:</h2>
+          </div>
+          <div class="col-lg-12">
+            <p>
+              The basic model principle applied here are deep learning networks with <strong> LSTM as their foundational functionalities </strong>. The model has been implemented via the latest version of <strong> Keras (Keras 2.4.2) with a tensorflow backend. </strong>
+              
+              <br> The model uses LSTM layers because of two main reasons: 
+              <br>
+              <ol><li>
+To avoid vanishing and exploding gradients</li>
+<li>
+To make best learning sense out of incomprehensible and noisy data </li></ol>
+The dataset used here is huge and has noisy values, LSTM proves to be the best model by eradicating the complete need to go through the noisy data and undergo noise attenuation manually. As the data is also huge the gradient descent method usually undergoes vanishing or exploding gradients which is managed by LSTM as well.
+Architecture:
+The model’s data is using a mini batch of size 16 and is trained over 30 epochs. It contains 32 hidden layers of tan-h LSTM. A dropout layer of 0.5 parameter is passed to reduce the risk of overfitting. The architecture ends with a dense layer with an activation function of sigmoid.
+As the classification is multiclass, hence, the loss used is categorical cross entropy. The model is evaluated over the ‘rmsprop’ function and measured over ‘accuracy’ metrics.
+An input dimension of 9 parameters accreted with 32 LSTM layers form a recondite convoluted learning network, which ends in a dense connected layer to bring out all the possible combinations of nodes for the module.
+
+            </p>
+          </div>
+          
+        </div>
+
+
+
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-12">
+            <h2 class="display-5 mb-3 text-black">CHALLENGES
+            </h2>
+          </div>
+          <div class="col-lg-12">
+            <p>
+              <ol>
+                <li>
+              Intraclass variation and interclass similarity</li>
+              <li>  Recognition under real world settings viz. Complex environmental factors,multiple subjects
+              </li> <li> Data Security </li>
+            <li>  Availability of technology </li> 
+           <li>   Scalability  </li>
+            <li>  Adaptability </li>
+            </ol>
+             
+            </p></div>
+          
+        </div>
+
+
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-12">
+            <h2 class="display-5 mb-3 text-black">PROJECT PROSPECTS
+
+            </h2>
+          </div>
+          <div class="col-lg-12">
+            <p> <strong> Ambient Assisted Living
+              Ambient Assisted Living (AAL) </strong>environments encompass technical systems and the Internet of Things (IoT) tools to support seniors in their daily routines. They aim to enable seniors to live independently and safely for as long as possible when faced declining physical or cognitive capacities.
+              The demarcation between traditional and smart systems is  automation. A vast number of existing commercial projects are based on predefined rules and actions,which can be changed manually, thereby reducing efficiency. By integrating IOT and Artificial Intelligence, we get a futuristic amalgamation: <br> Ambient Intelligence which has immense prospects to help the ailing.
+              
+              Visual human activity recognition 
+              Smart environments which include cameras and sensors can be used to obtain images and hence can be used for surveillance and monitoring. This is a viable addition to the project which makes it even serviceable and gives it a commercial use case.
+              
+              
+             
+            </p></div>
+          
+        </div>
+
+
+
+
+      
+
+
+      
+    
+
+
+
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-12">
+            <h3 class="display-5 mb-3 text-black">REFERENCES
+
+            </h3>
+          </div>
+          <div class="col-lg-12">
+
+            <p>
+              <a href=" https://github.com/STRCWearlab/DeepConvLSTM">
+              https://github.com/STRCWearlab/DeepConvLSTM</a>
+
+<br>
+              <a href="http://www.mdpi.com/1424-8220/16/1/115/html">
+              http://www.mdpi.com/1424-8220/16/1/115/html
+            </a>
+              
+             
+            </p></div>
+          
+        </div>
+
+
+
+    
+
+
+      
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-12">
+            <h3 class="display-5 mb-3 text-black">
+              MEET THE TEAM
+
+            </h3>
+          </div>
+          
+          
+      
+
+
+
+        <div class="container-team">
+          <div class="at-section">
+            <div class="at-grid" data-column="4">
+              <div class="at-column">
+                <div class="at-user">
+                  <div class="at-user__avatar"><img src="images/Hritik.jpg"/></div>
+                  <div class="at-user__name">Hritik Bhandari</div>
+                  <div class="at-user__title"></div>
+                  <ul class="at-social">
+                    <!-- <li class="at-social__item"><a href="" target="_blank">
+                        <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                        </svg></a></li>
+                    <li class="at-social__item"><a href="" target="_blank">
+                        <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                        </svg></a></li> -->
+                    <li class="at-social__item"><a href="" target="_blank">
+                        <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="at-column">
+                <div class="at-user">
+                  <div class="at-user__avatar"><img src="./images/Pratyaksh.JPG"/></div>
+                  <div class="at-user__name">Pratyaksh Bhalla</div>
+                  <div class="at-user__title"></div>
+                  <ul class="at-social">
+                    <!-- <li class="at-social__item"><a href="" target="_blank">
+                        <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                        </svg></a></li> -->
+                    <li class="at-social__item"><a href="/" target="_blank">
+                        <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="at-column">
+                <div class="at-user">
+                  <div class="at-user__avatar"><img src="./images/Akshat.jpg"/></div>
+                  <div class="at-user__name">Akshat Anand</div>
+                  <div class="at-user__title"></div>
+                  <ul class="at-social">
+                    <li class="at-social__item"><a href="" target="_blank">
+                        <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="at-column">
+                <div class="at-user">
+                  <div class="at-user__avatar"><img src="./images/Gayathri.jpg"/></div>
+                  <div class="at-user__name">Gayathri Seetharaman</div>
+                  <div class="at-user__title"></div>
+                  <ul class="at-social">
+                    <li class="at-social__item"><a href="./images/Gayathri.jpg" target="_blank">
+                        <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                        </svg></a></li>
+                   
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+    
+    
+
+   
+    
+   
+
+    
+    <footer class="site-footer">
+      <div class="container">
+
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <p>
+              Made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="" target="_blank" > Team DS Community</a>
+              
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+
+
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
